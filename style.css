@@ -1,0 +1,146 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+- Green: hsl(75, 94%, 57%)
+
+- White: hsl(0, 0%, 100%)
+
+- Grey 700: hsl(0, 0%, 20%)
+- Grey 800: hsl(0, 0%, 12%)
+- Grey 900: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a basic design system to help you build a more accurate solution faster. */
+
+:root {
+    /* Layout */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+    /* color */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    /* Typography */
+    --font-family: 'inter', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
+    --font-size-paragrahph: 14px;
+
+    /* spacing */
+    --border-radius: 8px;
+    --container-padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: var(--font-size-paragrahph);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--grey-900);
+    color: var(--white);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--grey-800);
+    padding: 2rem;
+    max-width: 400px;
+    max-width: 600px;
+}
+
+.container img {
+    width: 30%;
+    border-radius: 100%;
+    margin: 15px auto;
+
+
+}
+
+.container h4 {
+    font-weight: var(--font-weight-bold);
+    font-size: 1rem;
+}
+
+.container h4+p {
+    color: var(--green);
+    font-size: 0.62rem;
+    margin: 0.5rem 0px;
+}
+
+.container>p:nth-of-type(2) {
+
+    margin: 1rem 0px;
+}
+
+.btn {
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 2rem;
+    margin: 0.3rem;
+    background-color: var(--grey-700);
+    color: var(--white);
+    border: none;
+}
+
+.btn:hover {
+    color: black;
+    background-color: var(--green);
+    cursor: pointer;
+
+}
+
+
+@media(max-width: 375px) {
+    html {
+       font-size: 18px;
+    }
+  }
